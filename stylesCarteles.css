@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Norwester', sans-serif;
+  background-color: #dedede;
+  overflow-y: scroll;
+}
+
+/* SCROLL SNAP */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.container section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px 60px 60px;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e2021;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  font-family: 'Norwester', sans-serif;
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Norwester', sans-serif;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+/* TEXTO */
+.texto {
+  max-width: 400px;
+  font-family: 'Norwester', sans-serif;
+}
+.texto h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  
+}
+.texto p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* IMÁGENES */
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.imagenes img {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.imagenes img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* FOOTER FIJO */
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer-fixed img {
+  width: 100%;
+  display: block;
+}
+.imagenes img[src*="orgullo1"] {
+  transform-origin: center;
+}
+.imagenes img[src*="orgullo1"]:hover {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.imagenes img[src*="orgullo2"]:hover {
+  transform: rotate(5deg);
+}
+
+.imagenes img[src*="cavetown1"]:hover {
+  transform: translateY(-10px);
+}
+
+.imagenes img[src*="cavetown2"]:hover {
+  transform: translateX(-10px);
+}
+
+.imagenes img[src*="yonunca1"]:hover {
+  transform: scale(1.2);
+}
+
+.imagenes img[src*="yonunca2"]:hover {
+  transform: rotate(-5deg);
+}
+
+.imagenes img[src*="elton1"]:hover {
+  transform: translate(10px, -10px);
+}
+
+.imagenes img[src*="elton2"]:hover {
+  transform: scale(1.15) translateY(5px);
+}

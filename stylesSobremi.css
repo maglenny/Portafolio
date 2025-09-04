@@ -1,0 +1,109 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #dedede;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  font-family: 'Norwester', sans-serif;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Norwester', sans-serif;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social a {
+  color: #000;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+/* MAIN SOBRE MI */
+.sobre-mi-container {
+  display: flex;
+  height: 100vh;
+  padding-top: 80px; /* para compensar header */
+}
+
+/* Lado izquierdo: Imagen */
+.lado-izquierdo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lado-izquierdo img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Lado derecho: Texto */
+.lado-derecho {
+  flex: 1;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.lado-derecho h1 {
+  font-family: 'Norwester', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.lado-derecho p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.logo img {
+  height: 40px;
+  filter: invert(1) brightness(1.2) contrast(1.2);
+}

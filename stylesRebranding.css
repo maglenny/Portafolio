@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  background-color: #dedede; /* fondo correcto */
+  overflow-y: scroll;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e2021;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  font-family: 'Norwester', sans-serif;
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Norwester', sans-serif;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+/* CONTENEDOR SCROLL SNAP */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.container section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 100px 60px 60px;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  background-color: #dedede;
+}
+
+/* COLUMNAS */
+.rebranding .columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* TEXTOS */
+.texto h2 {
+  font-family: 'Norwester', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.texto p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* IMÁGENES */
+.imagenes-dos {
+  display: flex;
+  gap: 20px;
+}
+.imagen-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagen-texto img {
+  width: 100%;
+  max-width: 180px;
+
+  transition: transform 0.5s ease;
+}
+.imagen-texto img:hover {
+  transform: scale(1.1);
+}
+.imagen-texto p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* COLUMNAS DE LA DERECHA EN CIEE */
+.rebranding .columna img {
+  width: 100%;
+  height: 100%;           /* ocupar todo el alto disponible */
+  object-fit: cover;      /* recortar la imagen sin deformarla */
+  margin-bottom: 0px;
+
+  transition: transform 0.5s ease;
+}
+.rebranding .columna {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;       /* evita desbordes */
+}
+.rebranding .columna img:hover {
+  transform: translateY(-15px) skewX(5deg) ;
+}
+
+/* FOOTER FIJO */
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer-fixed img {
+  width: 100%;
+  display: block;
+}

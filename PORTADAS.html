@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portadas</title>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- NORWESTER -->
+  <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+  <!-- MULISH -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesPortadas.css">
+</head>
+<body>
+  <!-- HEADER -->
+<header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Proyectos</a></li>  
+        <li><a href="CONTACTO.html">Contacto</a></li>
+        <li><a href="SOBREMI.html">Sobre mí</a></li>
+      </ul>
+    </nav>
+    <div class="logo"><img src="r1.png" alt="loguito" class="r1" height="40px" onclick="mostrarMensaje()"></div>  
+    <script>
+    function mostrarMensaje() {
+      alert("Transformo ideas locas en diseños que enamoran siempre");
+    }
+  </script>
+</header>
+  <!-- SECTION 1 -->
+  <section class="panel portada1">
+    <div class="content">
+      <div class="image-container">
+        <img src="1portada.png" alt="Portada 1" class="hover-img">
+      </div>
+      <div class="text-container">
+        <h2>Portada: Envejecimiento en Bolivia</h2>
+        <p>
+          La producción de este libro fue un proyecto significativo, resultado de la colaboración 
+          entre la Fundación Aru y el UNFPA. Este fue uno de los primeros trabajos publicados 
+          y el proceso representó un desafío, culminando con la exitosa presentación del libro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="panel portada2">
+    <div class="center-content">
+      <img src="2portada.png" alt="Portada 2" class="hover-img sombra">
+      <p class="caption">REVISTA DE JOHN LENON</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="panel portada3">
+    <div class="triple-images">
+      <img src="3portada.png" alt="Portada 3" class="hover-img">
+      <img src="4portada.png" alt="Portada 4" class="hover-img">
+      <img src="5portada.png" alt="Portada 5" class="hover-img">
+    </div>
+  </section>
+
+</body>
+</html>
